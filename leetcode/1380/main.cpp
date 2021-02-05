@@ -127,19 +127,14 @@ int main(int argc, char** argv){
 						smallest_row = findSmallest(m[i]);
 						biggest_row = findBiggest(m[i]);
 
-						for(int j = 0; j < m[i].size(); j++){
-							if(j > i)
-								break;
-							column.push_back(m[j][i]);
-						}
-
 						cout << "Smallest in row: " << i << ": " << smallest_row << "\n";
 						cout << "Biggest in row: " << i << ": " << biggest_row << "\n";
-						cout << "\n";
-						cout << "Column:";
-						printVector(column);
-
+					
 					}
+
+					
+					printVector(t);
+
 
 					matrixIndex += 1;
 					cout << "\n";
