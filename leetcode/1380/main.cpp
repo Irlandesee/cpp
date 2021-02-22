@@ -132,10 +132,6 @@ int main(int argc, char** argv){
 					
 					}
 
-					
-					printVector(t);
-
-
 					matrixIndex += 1;
 					cout << "\n";
 					nums.clear();

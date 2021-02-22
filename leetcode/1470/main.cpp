@@ -73,7 +73,7 @@ int main(int argc, char** argv){
 			for(int i = 0; i < lines.size(); i++){
 				if(index <= lines.size()-1){
 					nums = splitString(lines[index]);
-					int 
+					 
 				}
 				index += 1;
 			}
