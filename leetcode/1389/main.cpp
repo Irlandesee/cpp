@@ -16,7 +16,7 @@ void printVector(const vector<int>& v){
 
 string removeBrackets(const string& str){
 	if(!str.empty())
-		return str.substr(1, str.size()-1);
+		return str.substr(1, str.size()-2);
 	return "";
 }
 
