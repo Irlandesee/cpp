@@ -13,6 +13,17 @@ void printVector(const vector<int>& v){
 	cout << " ";
 }
 
+vector<int> convertString(const string& s){
+	vector<int> ris;
+	stringstream ss(s);
+	string token;
+	char delim = ',';
+
+	while(getline(ss, token, delim))
+		ris.push_back(stoi(token));
+
+	return ris;
+}
 
 string removeBrackets(const string& str){
 	if(!str.empty())
@@ -26,10 +37,9 @@ vector<string> splitLine(const string& str){
 	vector<string> ris;
 	char delim = ' ';
 	
-	while(getline(ss, token, delim)){
+	while(getline(ss, token, delim))
 		ris.push_back(token);
-	}
-
+	
 	return ris;
 }
 
@@ -52,16 +62,26 @@ int main(int argc, char** argv){
 		vector<string> lines;
 		vector<int> nums;
 		vector<int> index;
+		vector<int> target;
 
 		if(f.is_open()){
 			while(getline(f, line)){
 				lines = splitLine(line);
+				
+				string nums_tmp = removeBrackets(lines[0]);
+				string index_tmp = removeBrackets(lines[1]);
 
-				for(auto& var : lines){
-					string s = removeBrackets(var);
-					cout << s << "\n";
+				cout << "Converting nums\n";
+				nums = convertString(nums_tmp);
+				cout << "Converting index\n";
+				index = convertString(index_tmp);
+
+				cout << "Printing nums and index\n";
+				for(int i = 0; i < nums.size(); i++){
+					cout << nums[i] << " " << index[i];
+					cout << "\n";
 				}
-
+				
 			}
 				
 		}
