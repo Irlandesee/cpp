@@ -43,10 +43,16 @@ vector<string> splitLine(const string& str){
 	return ris;
 }
 
-/*
-vector<int> createTargetArray(vector<int>& nums, vector<int>& index){
 
-}*/
+vector<int> createTargetArray(vector<int>& nums, vector<int>& index){
+	vector<int> ris;
+	vector<int>::iterator it;
+
+	for(int i = 0; i < index.size(); i++){
+		it = index[i];
+		
+	}
+}
 
 
 int main(int argc, char** argv){

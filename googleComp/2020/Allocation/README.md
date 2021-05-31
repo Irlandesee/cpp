@@ -1,10 +1,12 @@
 #PROBLEM
 There Are N houses for sale. The i-th house costs A_i dollars to buy. You have a budget of B dollars to spend.
 What is the maximum number of houses you can buy?
+
 #INPUT
 The first line of the input gives the number of test cases, T. T test cases follow. Each test case begins with a 
 single line containing the two intergers N and B. The second line contains N integers. The i-th integer is A_i
 the cost of the i_th house.
+
 #OUTPUT
 For each test case, output one line containing case #x: y, where x is the test case number(Starting from 1) and y is
 the maximum number of houses you can buy.
@@ -25,8 +27,8 @@ Memory limit: 1GB.
 #SAMPLE
 input 		output
 3
-4 100
-20 90 40 90 	case#1: 2
+4 100			
+20 90 40 90 	case#1: 2 
 4 50		case#2: 3
 30 30 10 10 	case#3: 0
 3 300
